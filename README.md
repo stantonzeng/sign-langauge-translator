@@ -10,6 +10,11 @@ This is my first attempt at implementing deep learning and using Neural Networks
 
 Make sure you have python installed.
 
+## Demos
+
+![Alt Text](gifs/abc.gif)
+
+![Alt Text](gifs/hello_world.gif)
 ## Procedure
 
 If you want to create your own custom dataset, you can run the picTakingScript.py and use the create_dataset(number_imgs) where number_imgs == number of images that you want to have for each letter. You must also have a folder called "dataset" with all of the letters in it as folders. The same can be done with validation and test data.
