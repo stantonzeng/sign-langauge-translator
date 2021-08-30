@@ -10,12 +10,12 @@ This is my first attempt at implementing deep learning and using Neural Networks
 
 ## Procedure
 
-If you want to create your own custom dataset, you can run the picTakingScript.py and use the create_dataset(number_imgs) where number_imgs == number of images that you want to have for each letter. You must also have a folder called "dataset" within that same folder with all of the letters in it.
+If you want to create your own custom dataset, you can run the picTakingScript.py and use the create_dataset(number_imgs) where number_imgs == number of images that you want to have for each letter. You must also have a folder called "dataset" with all of the letters in it as folders. The same can be done with validation and test data.
 
 ```
 /dataset/
       /a/
-          a1.jpg
+          a1.jpg  <--- You will create this
           a2.jpg
           .
           .
@@ -32,3 +32,7 @@ If you want to create your own custom dataset, you can run the picTakingScript.p
       .
       /z/
 ```
+
+## Classify
+
+Classifying your images first requires you to train your model. As long as you have all of your images in the dataset, valset, and testset folders, it should work. If it doesn't work, just notify me, as I originally did this using jupyter notebook, so a lot of the code is not IDE friendly. The CNN model will train itself using the training data and validate itself using the validation data. It will then retrain itself using the values that it got wrong in both the training set and validation set, and then train itself again. I found this method the best way to increase accuracy.
