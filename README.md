@@ -45,6 +45,12 @@ If you want to create your own custom dataset, you can run the picTakingScript.p
 
 Classifying your images first requires you to train your model. As long as you have all of your images in the dataset, valset, and testset folders, it should work. If it doesn't work, just notify me, as I originally did this using jupyter notebook, so a lot of the code is not IDE friendly. The CNN model will train itself using the training data and validate itself using the validation data. It will then retrain itself using the values that it got wrong in both the training set and validation set, and then train itself again. I found this method the best way to increase accuracy.
 
+Once your model is trained, make sure you save it to a location. Once you use classify.py, change the line
+```
+cnn = tf.keras.models.load_model(path) #change this according to the saved model
+```
+so that it loads your actual cnn model.
+
 ## Accuracy
 
 The best accuracy my model could achieve was 92% with a validation accuracy of 85%. 
